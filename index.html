@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            position: relative;
+            perspective: 300px;
+            width: 200px;
+            margin: auto;
+        }
+
+        .card1 {
+            position: absolute;
+            top: 0%;
+            background-color: red;
+            height: 200px;
+            width: 200px;
+        }
+        .col2{
+            z-index: 2;
+            animation: ani 2s forwards;
+            transform-origin: 24% 40%;
+
+
+        }
+        .col1{
+            /* transform: rotate(20deg); */
+            transition: 0.3s;
+            background-color: yellow;
+            animation: ani 2s forwards;
+            transform-origin: 24% 40%;
+        }
+        @keyframes ani{
+            100%{
+              transform: translateX(-100px) rotateY(-180deg);
+            }
+        }
+        .item_1{
+            z-index: 1;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card1 item_1" style="background-color: rgb(226, 235, 54);"></div>
+        <div class="card1 item_2" style="background-color: rgb(0, 255, 13);"></div>
+        <div class="card1 item_3" style="background-color: rgb(0, 242, 255);"></div>
+        <div class="card1 item_4" style="background-color: rgb(13, 0, 255);"></div>
+        <div class="card1 item_5" style="background-color: rgb(217, 0, 255);"></div>
+        <div class="card1 item_6" style="background-color: rgb(153, 59, 66);"></div>
+
+    </div>
+    <script>
+        let a = document.querySelector(".item_1");
+        let b = document.querySelector(".item_2");
+        let c = document.querySelector(".item_3");
+        let d = document.querySelector(".item_4");
+        let f = document.querySelector(".item_5");
+        let g = document.querySelector(".item_6");
+
+        a.addEventListener("click", function () {
+            a.classList.toggle("col1");
+        })
+        g.addEventListener("click", function () {
+            g.classList.toggle("col2");
+        })
+
+
+
+    </script>
+    <a href="text.html">text page</a>
+</body>
+
+</html>
