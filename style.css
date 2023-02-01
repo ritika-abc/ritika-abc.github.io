@@ -31,7 +31,7 @@ body {
 
  }
  ::-webkit-scrollbar-thumb{
-  background-color: #f75023;
+  background-color: #76048b;
   border-radius: 50px;
 
 
@@ -80,7 +80,7 @@ body {
 }
 
 .main_heading>h5 {
-  color: red;
+  color: #76048b;
   font-size: 25px;
 }
 
@@ -106,7 +106,7 @@ body {
   overflow: hidden;
   padding: 10px;
   text-align: center;
-  border: 1px solid red;
+  border: 1px solid #76048b;
 }
 
 .margin {
@@ -117,7 +117,7 @@ body {
 .card_pos>.text>h5,
 .portfolio_text>h5,
 .portfolio_text1>h5 {
-  color: red;
+  color: #76048b;
   font-size: 23px;
 }
 
@@ -158,7 +158,7 @@ p {
   border-radius: 30px;
   text-transform: capitalize;
   color: white;
-  background-color: #f75023;
+  background-color: #76048b;
 }
 
 .button:hover {
@@ -215,14 +215,14 @@ p {
   overflow: hidden;
   text-align: center;
   width: 150px;
-  border: 1px solid#f75023;
+  border: 1px solid#76048b;
 }
 
 .shape {
   position: absolute;
   top: 0%;
   /* border-radius: 50%; */
-  background-color: #f75023;
+  background-color: #76048b;
   height: 100vh;
   width: 100%;
   transition: width 0.7s;
@@ -253,7 +253,7 @@ p {
 }
 
 .my_btn:hover>.text_box {
-  color: #f75023;
+  color: #76048b;
   transition: 0.5s;
 }
 
@@ -325,12 +325,25 @@ p {
   }
 }
 .inp {
+  outline: none;
+  border: none!important;
     width: 100%;
-    border: 1px solid rgb(200, 195, 195);
+    border-bottom: 2px solid #76048b!important;
     padding: 15px;
-    border-radius: 10px;
+ 
+    background-color: transparent!important;
   }
-
+  .inp:focus{
+    border-bottom: 2px solid rgb(163, 89, 160) !important;
+    transition: 0.3s;
+    /* outline: none!important; */
+    box-shadow: none!important;
+  }
+  .inp::placeholder,label{
+    color: #7b4185;
+    text-transform: capitalize;
+  }
+  
 
 
 
@@ -411,7 +424,7 @@ p {
     border-radius: 10px;
   }
 span {
-  color: red;
+  color: #76048b;
   font-size: 20px;
 }
 
@@ -469,7 +482,7 @@ height: 80vh!important;
   .main_heading>.text>h5 {
     margin-top: 20px;
 
-    color: red;
+    color: #76048b;
     font-size: 20px;
   }
 
@@ -561,8 +574,9 @@ height: 80vh!important;
     height: 75px;
     border-radius: 50%;
     position: relative;
-    background-color: #f6cbc1;
-    color: #f75023;
+    background-color: transparent;
+    color: #76048b;
+    border: 1px solid #76048b;
     font-size: 20px;
   }
 
@@ -615,7 +629,7 @@ height: 80vh!important;
       border-radius: 50%;
       position: relative;
       background-color: #f6cbc1;
-      color: #f75023;
+      color: #76048b;
       font-size: 20px;
     }
   
