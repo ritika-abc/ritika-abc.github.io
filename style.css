@@ -40,14 +40,16 @@ body {
   width: 95%;
   margin: auto;
 } */
- 
+ video{
+  object-fit: contain;
+ }
 .bg {
-  background-image: url(./images/1.jpg);
+  /* background-image: url(./images/1.jpg); */
   height: 100vh;
   width: 100%;
-  background-size: cover;
-  background-position: center center;
- 
+  /* background-size: cover;
+  background-position: center center; */
+ overflow: hidden;
 }
 
 @keyframes body{
@@ -57,6 +59,9 @@ body {
   100%{
     height: 100vh;
   }
+}
+.show_top{
+  display: none;
 }
 /* .text {
   width: 80%;
@@ -188,7 +193,7 @@ p {
 .top_to{   
   position: fixed;
   bottom: 5%;
-  left: 2%;
+  right: 2%;
  font-size: 20px;
   color: rgb(255, 255, 255);
   text-decoration: none; 
