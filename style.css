@@ -453,12 +453,16 @@ span {
   /* #navbarmy{
     width: 80%!important;
   } */
-  video{
+  /* video{
 display: none;
   }
   .bg{
     background-image: url(./images/1.jpg); 
-  }
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+  } */
   .shadow{
     box-shadow: none;
   }
