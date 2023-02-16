@@ -1,4 +1,4 @@
-* {
+*{
   /* font-family: 'Tiro Devanagari Hindi', serif; */
   /* font-family: open sans,sans-serif; */
 
@@ -47,8 +47,8 @@ body {
   /* background-image: url(./images/1.jpg); */
   height: 100vh;
   width: 100%;
-  /* background-size: cover;
-  background-position: center center; */
+  background-size: cover;
+  background-position: center center;
  overflow: hidden;
 }
 
@@ -453,6 +453,12 @@ span {
   /* #navbarmy{
     width: 80%!important;
   } */
+  video{
+display: none;
+  }
+  .bg{
+    background-image: url(./images/1.jpg); 
+  }
   .shadow{
     box-shadow: none;
   }
@@ -469,7 +475,9 @@ height: 80vh!important;
     margin-top: 20px;
 
   }
-
+/* .main_heading{
+  margin-top: 40px !important;
+} */
   .card_pos {
     text-align: center;
   }
@@ -610,6 +618,63 @@ height: 80vh!important;
 }
  
 
+/* audio */
+.audio_box{
+  height: 40px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 5%;
+  padding: 20px;
+  cursor: context-menu;
+}
+.audio>span:nth-child(1){
+  display: inline-block;
+  height:  0px;
+  width: 2px;
+  background-color: rgb(106, 47, 196);
+  margin:0px;
+  animation: audio  2s 0.1s infinite  linear;
+}
+.audio>span:nth-child(2){
+  display: inline-block;
+  height:  0px;
+  width: 2px;
+  background-color: rgb(106, 47, 196);
+
+  margin:0px;
+  animation: audio  2s 0.4s infinite  linear;
+}
+.audio>span:nth-child(3){
+  display: inline-block;
+  height:  0px;
+ 
+  width: 2px;
+  background-color: rgb(106, 47, 196);
+
+  margin:0px;
+  animation: audio  0.6s 0.4s   infinite  linear;
+}
+.audio>span:nth-child(4){
+  display: inline-block;
+  height:  0px;
+
+  width: 2px;
+  background-color: rgb(106, 47, 196);
+
+  margin:0px;
+  animation: audio  0.9s 0.3s  linear infinite  ;
+}
+@keyframes audio {
+  0%{
+    height:  0px;
+  }
+  50%{
+    height:  30px;
+  }
+}
+ 
+
+
   @media screen and (min-width:768px) {
     #img1 {
       width: 50%;
@@ -674,9 +739,3 @@ height: 80vh!important;
 
     }
   }
-
-
-
-
-
-  

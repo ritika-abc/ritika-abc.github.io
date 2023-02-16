@@ -31,6 +31,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./images/fav.png" >
 </head>
 
 <body>
@@ -38,7 +39,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark    border-bottom sticky-top  " id="navbarmy"
         style="background-color: #76048b ;">
         <div class="container-fluid">
-            <a class="navbar-brand" id="h" href="#">Ritika </a>
+            <a class="navbar-brand" id="h" href="#"> <img src="./images/logo.png" style="border-radius: 30px 0px 30px 0px;" height="50px" width="50px" alt=""> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -71,7 +72,7 @@
         </div>
     </nav>
     <div class="bg position-relative" id="top1">
-        <video src="images/bg.jpg.webp" style="transform:rotate(0DEG);z-index: -1;" class="position-absolute top-0 start-0"
+        <video src="./images/1.mp4" style="transform:rotate(0DEG);z-index: -1;" class="position-absolute top-0 start-0"
             height="auto" width="100%" type="video/mp4" autoplay muted loop></video>
 
         <div class="container">
@@ -85,8 +86,9 @@
                 <div class="col-12 col-md-12 col-lg-6 main_heading ">
                     <h5> Hello, I'm </h5>
                     <h3 class="animate__animated animate__bounce animate__backInDown"><i>Ritika</i></h3>
-                    <h4 class=" ">A <span style="color: #8067f0;">Creative Designer</span> From <span
-                            style="color: #1cbe59">INDIA</span> </h4>
+                    <h4 class=" ">A <span style="color: #8067f0;text-shadow: 1px 1px 1px rgb(182, 255, 250);">Creative
+                            Designer</span> From <span
+                            style="color: #1cbe59;text-shadow: 1px 1px 3px rgb(204, 255, 213);">INDIA</span> </h4>
                     <p class="  ">I'm creative designer based in INDIA, and I'm very passionate and dedicated to my
                         work.</p>
                     <div class="my_btn  ">
@@ -541,27 +543,55 @@
         </div>
     </div>
     <!--  -->
-
-    <div class="voice">
-        <audio src="images/vice.mp3" type="audio/mp3" play autoplay loop></audio>
+    <div class="audio_box  ">
+        <div class="audio">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <audio src="" autoplay loop></audio>
     </div>
+    <footer class="bg-dark py-5">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-7 text-white text-center">
+            <h6>Designed & Built by <span class="text-danger "> &#10084;</span> Ritika</h6>
+            
+        </div>
+    </div>
+</div>
+    </footer>
+
 
     <script>
-        window.addEventListener("scroll" , function (){
+
         var a = document.querySelector(".top_to")
+        var audio_box = document.querySelector(".audio_box")
+        var audio = document.querySelector("audio")
+
+        audio_box.addEventListener("click", function () {
+            audio.src = "./images/vice.mp3";
+            audio.play()
+        })
+        window.addEventListener("scroll", function () {
+
 
             var Y = pageYOffset;
             if (Y > 100) {
-                a.style.display="block";
-            }else{
-                a.style.display="none";
+                a.style.display = "block";
+
+            } else {
+                a.style.display = "none";
+
 
 
             }
-            console.log(Y)
         })
-           
-        
+
+
+
+
     </script>
     <script>
         AOS.init();
